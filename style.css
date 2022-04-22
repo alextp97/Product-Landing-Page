@@ -73,6 +73,7 @@
     }
   }
   
+  /** Código para el cuerpo del ejercicio **/
   .cuerpo {
     display: block;
     width: 100%;
@@ -133,7 +134,7 @@
     margin: 8px 0;
     border: 0;
     text-align: center;
-    background-color: yellow;
+    background-color: rgb(255, 238, 0);
     font-size: 16px;
     font-weight: 800;
     
