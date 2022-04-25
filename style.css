@@ -1,103 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&display=swap');
+
 #header {
-    position: fixed;
-    background-color: #2A8B18;
-    width: 100%;
-    min-height: 80px;
-    max-height: 90px;
-    display: flex;
+  position: fixed;
+  background-color: #2A8B18;
+  width: 100%;
+  min-height: 80px;
+  max-height: 90px;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  #header {
+    flex-wrap: wrap;
   }
-  
-  @media (max-width: 600px) {
-    #header {
-      flex-wrap: wrap;
-    }
-  }
-  
-  .dimg {
-      display: flex;
-    width: 65%;
-  }
-  
+}
+
+.dimg {
+  display: flex;
+  width: 65%;
+}
+
+#header-img {
+  display: flex;
+  width: 100%;
+  max-width: 20%;
+  max-height: 100%;
+  text-align: center;
+  padding-left: 15px;
+}
+
+@media (max-width: 650px) {
   #header-img {
-    display: flex;
     width: 100%;
-    max-width: 20%;
-    max-height: 100%;
-    text-align: center;
-    padding-left: 15px;
+    max-width: 60%;
+    position: relative;
   }
+}
+
+#nav-bar {
+  display: block;
+  width: 35%;
+}
+
+#nav-bar > ul {
+  display: flex; 
+  justify-content: space-around;
   
-  @media (max-width: 650px) {
-    #header-img {
-      width: 100%;
-      max-width: 60%;
-      position: relative;
-    }
-  }
-  
-  #nav-bar {
-    display: block;
-    width: 35%;
-  }
-  
+}
+
+@media (max-width: 650px) {
   #nav-bar > ul {
-    display: flex; 
-    justify-content: space-around;
-    
+    flex-direction: column;
+    padding: 0 30px 0 0;
   }
-  
-  @media (max-width: 650px) {
-    #nav-bar > ul {
-      flex-direction: column;
-      padding: 0 30px 0 0;
-    }
-  }
-  
-  li {
-    list-style: none;
-  }
-  
+}
+
+li {
+  list-style: none;
+}
+
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+@media (max-width: 650px) {
   .nav-link {
-    text-decoration: none;
-    color: black;
-    font-family: sans-serif;
-    font-size: 20px;
+    flex-direction: column;
+    padding: 0 auto;
+    font-size: 16px;
+    margin: 20px auto;
   }
+}
+
+.cuerpo {
+  display: block;
+  width: 100%;
+  padding-top: 5%;
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+  background-color: #D5FACE;
+  box-sizing: border-box;
+}
+
+#cfunciona {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#descrip {
+
+  display: block;
+  width: 100%;
+  margin-bottom: 80px;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+#descrip .icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  width: 20%;
+  color: darkorange;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  height: 130px;
+}
+
+h4 {
+  display: block;
+  font-family: 'Lobster', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+;
+}
+
+p {
+  display: block;
+  font-family: 'Lobster', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin-top: -20px;
+
+}
+
+
+
+#video {
+  height: 350px;
+  width: 100%;
+}
+
+#ventajas {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 45px;
+  font-family: sans-serif;
   
-  @media (max-width: 650px) {
-    .nav-link {
-      flex-direction: column;
-      padding: 0 auto;
-      font-size: 16px;
-      margin: 20px auto;
-    }
-  }
-  
-  /** Código para el cuerpo del ejercicio **/
-  .cuerpo {
-    display: block;
-    width: 100%;
-    padding-top: 5%;
-    max-width: 800px;
-    margin: 0 auto 0 auto;
-    background-color: #D5FACE;
-    box-sizing: border-box;
-  }
-  
-  #cfunciona {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
-  
-  #video {
-    height: 350px;
-    width: 100%;
-  }
-  
+}
+
+@media (max-width: 650px) {
   #ventajas {
     display: flex;
     flex-direction: column;
@@ -105,66 +173,69 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 15px;
-    font-family: sans-serif;
-    
-  }
-  
-  h3 {
-    margin: 0 0 15px 0;
-    display: block;
-    text-align: center;
-  }
-  
-  input {
-    display: inline-block;
-  }
-  
-  #ventajas input[type='email'] {
-    max-width: 275px;
-    width: 100%;
-    padding: 6px;
-    box-sizing: border-box;
-  }
-  
-  #ventajas input[type='submit'] {
-    max-width: 120px;
-    width: 100%;
-    height: 30px;
-    margin: 8px 0;
-    border: 0;
-    text-align: center;
-    background-color: rgb(255, 238, 0);
-    font-size: 16px;
-    font-weight: 800;
-    
-  }
-  
-  footer {
-    background-color: #2A8B18;
-    margin-top: 25px;
-    padding: 20px;
+    margin-top: 75px;
     font-family: sans-serif;
   }
+}
+
+h3 {
+  margin: 0 0 15px 0;
+  display: block;
+  text-align: center;
+}
+
+input {
+  display: inline-block;
+}
+
+#ventajas input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 6px;
+  border: 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+#ventajas input[type='submit'] {
+  max-width: 120px;
+  width: 100%;
+  height: 30px;
+  margin: 8px 0;
+  border: 0;
+  border-radius: 2px;
+  text-align: center;
+  background-color: darkorange;
+  font-size: 16px;
+  font-weight: 800;
   
-  footer > ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  footer > ul > li {
-    padding: 0 10px;
-  }
-  
-  footer > span {
-    margin-top: 5px;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 0.9em;
-    color: white;
-  }
+}
+
+footer {
+  background-color: #2A8B18;
+  margin-top: 25px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: white;
+}
